@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Big Shoulders Display", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 48px;
+    max-width: 307px;
+    width: 307px;
+}
+
+.card div {
+    position: relative;
+    width: 64px;
+}
+
+.card div span {
+    display: block;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #0000002e;
+}
+
+.card div figure {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    top: 10px;
+    width: 43.91px;
+    height: 20px;
+}
+
+.card div figure img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-one {
+    background-color: #E28625;
+    border-radius: 8px 0 0 8px;
+}
+
+.card-two {
+    background-color: #006971;
+}
+
+.card-three {
+    background-color: #004140;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.card h2 {
+    margin: 35px 0 25px 0;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #F2F2F2;
+}
+
+.card p {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.card a {
+    padding: 10px 30.5px;
+    display: block;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+    margin-top: 83px;
+    max-width: 146px;
+    height: 48px;
+    max-height: 48px;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+
+}
+
+.card a:hover {
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    background-color: transparent;
+    transform: scale(1.05);
+
+}
+.card-one a {
+    color: #E28625;
+}
+
+
+.card-two a {
+    color: #006971;
+}
+
+.card-three a {
+    color: #004140;
+}
+
+@media (max-width:800px) {
+    .card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .card-one {
+        border-radius: 8px 8px 0 0;
+    }
+
+    .card-three {
+        border-radius: 0 0 8px 8px;
+    }
+
+    main {
+        height: 100%;
+        padding: 88px 24px;
+    }
+}
